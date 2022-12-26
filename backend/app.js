@@ -19,6 +19,8 @@ var app = express();
 var cliente_router = require('./routes/cliente');
 /**Instanciar el archivo de rutas de usuario. */
 var usuario_router = require('./routes/usuario');
+/**Instanciar el archivo de rutas de producto. */
+var producto_router = require('./routes/producto');
 
 /**Para poder 'parsear' los datos: */
 app.use(bodyparser.urlencoded({limit: '50mb', extended: true}));
@@ -51,6 +53,8 @@ app.use((req,res,next)=>{
 app.use('/api', cliente_router);
 /**Hacemos lo mismo pero con el archivo de rutas de usuario. */
 app.use('/api', usuario_router);
+/**Lo mismo con el archivo de rutas de producto. */
+app.use('/api', producto_router);
 
 /**Exportamos nuestra variable app */
 module.exports = app;
