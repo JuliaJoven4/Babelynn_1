@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "babel-helper-vue-jsx-merge-props": "^2.0.3",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "vue-notifyjs": "^0.4.3"
+  }
+}
