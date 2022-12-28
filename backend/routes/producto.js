@@ -8,6 +8,7 @@ var authenticate = require('../middlewares/authenticate');
 
 var multipart = require('connect-multiparty');
 
+//Se configura la carpeta de destino para todas las imágenes
 var path = multipart({uploadDir: './uploads/productos'});
 
 var api = express.Router();
